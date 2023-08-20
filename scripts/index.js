@@ -98,6 +98,13 @@ function applybtnClicked()
 } 
 
 
+// after opening model goto home function
+function gotoHome()
+{
+    location.reload();
+}
+
+
 
 
 
