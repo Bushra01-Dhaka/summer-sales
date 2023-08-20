@@ -25,6 +25,14 @@
             padding-top: 10px;
         }
 
+        @media screen and (min-width:570px) and (max-width:900px)
+        {
+            .cart-container 
+            {
+                text-align: center;
+            }
+        }
+
         @media screen and (max-width:570px) {
             .header-container h1 {
                 font-size: 35px;
@@ -71,18 +79,18 @@
    </header>
 
     <!-- main section -->
-    <main id="main-section" class="container mx-auto pb-8 pt-14">
+    <main id="main-section" class="container mx-auto pb-8 pt-14 bg-[#F8F8F8]">
 
-        <div class="container-img border-5 flex flex-col lg:flex-row justify-center gap-8 ">
+        <div class="container-img  flex flex-col lg:flex-row justify-center gap-8 ">
 
             <!-- for card container left-side -->
         <div>
             <h2 class="text-4xl font-semibold p-8">Kitchenware</h2>
-            <div class="border-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
 
 
                 <!-- card 1 -->
-                <div>
+                <div onclick="calculator()">
                     <div onclick="cardClicked1()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
                         <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
                         <div class="card-body text-center ">
@@ -100,7 +108,7 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                <div onclick="cardClicked2()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
                     <figure><img src="./images/prod2.png" alt="Shoes" /></figure>
                     <div class="card-body text-center ">
                         <div class="rating mb-4">
@@ -110,14 +118,14 @@
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                         </div>
-                        <h2 class="card-title font-medium">K. Accessories</h2>
-                        <p><span>25.00</span> TK</p>
+                        <h2 id="cardItem-field-2" class="card-title font-medium">K. Accessories</h2>
+                        <p><span id="card-price-field-2">25.00</span> TK</p>
                     </div>
                 </div>
 
 
                 <!-- card 3 -->
-                <div class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                <div onclick="cardClicked3()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
                     <figure><img src="./images/prod3.png" alt="Shoes" /></figure>
                     <div class="card-body text-center ">
                         <div class="rating mb-4">
@@ -127,8 +135,8 @@
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                         </div>
-                        <h2 class="card-title font-medium">Home Cooker</h2>
-                        <p><span>49.00</span> TK</p>
+                        <h2 id="cardItem-field-3" class="card-title font-medium">Home Cooker</h2>
+                        <p><span id="card-price-field-3">49.00</span> TK</p>
                     </div>
                 </div>
             </div>
@@ -136,9 +144,9 @@
 
             <h2 class="text-4xl font-semibold p-8">Sportswear</h2>
 
-            <div class="border-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
                  <!-- card 4 -->
-                 <div class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                 <div onclick="cardClicked4()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
                     <figure><img src="./images/prod4.png" alt="Shoes" /></figure>
                     <div class="card-body text-center ">
                         <div class="rating mb-4">
@@ -148,14 +156,14 @@
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                         </div>
-                        <h2 class="card-title font-medium">Sports Back Cap</h2>
-                        <p><span>49.00</span> TK</p>
+                        <h2 id="cardItem-field-4" class="card-title font-medium">Sports Back Cap</h2>
+                        <p><span id="card-price-field-4">49.00</span> TK</p>
                     </div>
                 </div>
 
 
                 <!-- card 5 -->
-                <div class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                <div onclick="cardClicked5()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
                     <figure><img src="./images/prod5.png" alt="Shoes" /></figure>
                     <div class="card-body text-center ">
                         <div class="rating mb-4">
@@ -165,14 +173,14 @@
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                         </div>
-                        <h2 class="card-title font-medium">Full Jersey Set</h2>
-                        <p><span>69.00</span> TK</p>
+                        <h2 id="cardItem-field-5" class="card-title font-medium">Full Jersey Set</h2>
+                        <p><span id="card-price-field-5">69.00</span> TK</p>
                     </div>
                 </div>
 
 
                 <!-- card 6 -->
-                <div class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                <div onclick="cardClicked6()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
                     <figure><img src="./images/prod6.png" alt="Shoes" /></figure>
                     <div class="card-body text-center ">
                         <div class="rating mb-4">
@@ -182,8 +190,8 @@
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                         </div>
-                        <h2 class="card-title font-medium">Sports cates</h2>
-                        <p><span>159.00</span> TK</p>
+                        <h2 id="cardItem-field-6" class="card-title font-medium">Sports cates</h2>
+                        <p><span id="card-price-field-6">159.00</span> TK</p>
                     </div>
                 </div>
 
@@ -211,8 +219,8 @@
                         <div class="card-body">
                             <h2 class=" text-3xl text-justify font-semibold">Have coupon?</h2>
                             <div class="flex justify-center ">
-                                <input type="text" class="px-8 py-2 rounded border-2" placeholder="coupon code">
-                                <button
+                                <input id="coupon-input-field" type="text" class="px-8 py-2 rounded border-2" placeholder="coupon code">
+                                <button onclick="applybtnClicked()" id="apply-btn-field"
                                     class="btn-md px-8 py-2 rounded bg-[#E527B2] opacity-50 cursor-not-allowed text-white text-lg "
                                      disabled>Apply</button>
                             </div>
@@ -232,12 +240,12 @@
 
 
                             <hr class="m-4">
-                            <h3 class="text-xl font-semibold">Total Price: <span>00</span>TK</h3>
-                            <h3 class="text-xl font-semibold">Discount: <span>00</span>TK</h3>
-                            <h3 class="text-xl font-semibold">Total: <span>00</span>TK</h3>
+                            <h3 class="text-xl font-semibold">Total Price: <span id="total-price-field">00</span>TK</h3>
+                            <h3 class="text-xl font-semibold">Discount: <span id="total-discount-field">00</span>TK</h3>
+                            <h3 class="text-xl font-semibold">Total: <span id="total-overall-field">00</span>TK</h3>
 
 
-                            <button
+                            <button  id="purchase-btn-field"
                                 class="text-md text-white my-4 w-full bg-[#E527B2] opacity-50 cursor-not-allowed px-8 py-4 rounded" disabled>Make
                                 Purchase</button>
 
