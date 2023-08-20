@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Shop</title>
-    <link rel="shortcut icon" href="images/congo.png" type="image/x-icon">
+    <title>ShopShop</title>
+    <link rel="shortcut icon" href="./images/congo.png" type="image/x-icon">
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,22 @@
         }
 
         .container-img img {
-            padding-top: 10px;
+            padding: 10px;
+
+            
+        }
+        figure
+        {
+            background-color: #1111110C;
         }
 
         @media screen and (min-width:570px) and (max-width:900px) {
             .cart-container {
+                text-align: center;
+            }
+
+            .main-container h2 
+            {
                 text-align: center;
             }
         }
@@ -40,8 +51,22 @@
                 width: 100%;
             }
 
+            .main-container h2 
+            {
+                text-align: center;
+            }
+
             .cart-container {
                 text-align: center;
+            }
+
+            .coupon-container .card 
+            {
+                width: 90%;
+            }
+            .apply-btn input
+            {
+                padding: 8px 12px;
             }
         }
     </style>
@@ -77,7 +102,8 @@
     </header>
 
     <!-- main section -->
-    <main id="main-section" class="container mx-auto pb-8 pt-14 bg-[#F8F8F8]">
+    <main class="bg-[#F8F8F8]">
+    <div id="main-section" class=" main-container container mx-auto pb-8 pt-14">
 
         <div class="container-img  flex flex-col lg:flex-row justify-center gap-8 ">
 
@@ -89,10 +115,10 @@
 
                     <!-- card 1 -->
                     <div onclick="calculator()">
-                        <div onclick="cardClicked1()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                        <div onclick="cardClicked1()" class="card w-60 bg-base-100 shadow-xl mx-auto hover:bg-[#F9F6E2] ">
                             <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
                             <div class="card-body text-center ">
-                                <div class="rating mb-4">
+                                <div class="rating mb-4 pl-4">
                                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
                                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
@@ -106,10 +132,10 @@
                     </div>
 
                     <!-- card 2 -->
-                    <div onclick="cardClicked2()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                    <div onclick="cardClicked2()" class="hover:bg-[#F9F6E2] card w-60 bg-base-100 shadow-xl mx-auto ">
                         <figure><img src="./images/prod2.png" alt="Shoes" /></figure>
                         <div class="card-body text-center ">
-                            <div class="rating mb-4">
+                            <div class="rating mb-4 pl-4">
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
@@ -123,10 +149,10 @@
 
 
                     <!-- card 3 -->
-                    <div onclick="cardClicked3()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                    <div onclick="cardClicked3()" class="hover:bg-[#F9F6E2] card w-60 bg-base-100 shadow-xl mx-auto ">
                         <figure><img src="./images/prod3.png" alt="Shoes" /></figure>
                         <div class="card-body text-center ">
-                            <div class="rating mb-4">
+                            <div class="rating mb-4 pl-4">
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
@@ -144,10 +170,10 @@
 
                 <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
                     <!-- card 4 -->
-                    <div onclick="cardClicked4()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                    <div onclick="cardClicked4()" class="hover:bg-[#F9F6E2] card w-60 bg-base-100 shadow-xl mx-auto ">
                         <figure><img src="./images/prod4.png" alt="Shoes" /></figure>
                         <div class="card-body text-center ">
-                            <div class="rating mb-4">
+                            <div class="rating mb-4 pl-4">
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
@@ -161,10 +187,10 @@
 
 
                     <!-- card 5 -->
-                    <div onclick="cardClicked5()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                    <div onclick="cardClicked5()" class=" hover:bg-[#F9F6E2] card w-60 bg-base-100 shadow-xl mx-auto ">
                         <figure><img src="./images/prod5.png" alt="Shoes" /></figure>
                         <div class="card-body text-center ">
-                            <div class="rating mb-4">
+                            <div class="rating mb-4 pl-4">
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
@@ -178,10 +204,10 @@
 
 
                     <!-- card 6 -->
-                    <div onclick="cardClicked6()" class="card w-60 bg-base-100 shadow-xl mx-auto ">
+                    <div onclick="cardClicked6()" class="hover:bg-[#F9F6E2] card w-60 bg-base-100 shadow-xl mx-auto ">
                         <figure><img src="./images/prod6.png" alt="Shoes" /></figure>
                         <div class="card-body text-center ">
-                            <div class="rating mb-4">
+                            <div class="rating mb-4 pl-4">
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" checked />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
@@ -212,11 +238,11 @@
             <div class="cart-container pt-8">
 
                 <!-- coupon card section -->
-                <div>
-                    <div class="card w-[100%] mx-auto shadow-xl py-6 bg-[#F9F6E2]">
+                <div class="coupon-container mt-0 lg:mt-20">
+                    <div class="card w-[100%] mx-auto shadow-xl py-6 bg-white">
                         <div class="card-body">
                             <h2 class=" text-3xl text-justify font-semibold">Have coupon?</h2>
-                            <div class="flex justify-center ">
+                            <div class=" apply-btn flex justify-center px-6 lg:px-0 ">
                                 <input id="coupon-input-field" type="text" class="px-8 py-2 rounded border-2"
                                     placeholder="coupon code">
                                 <button onclick="applybtnClicked()" id="apply-btn-field"
@@ -243,17 +269,12 @@
                             <h3 class="text-xl font-semibold">Discount: <span id="total-discount-field">00</span>TK</h3>
                             <h3 class="text-xl font-semibold">Total: <span id="total-overall-field">00</span>TK</h3>
 
-
-                            <!-- <button  id="purchase-btn-field"
-                                class="text-md text-white my-4 w-full bg-[#E527B2] opacity-50 cursor-not-allowed px-8 py-4 rounded" disabled>Make
-                                Purchase</button> -->
-
-
+                   <!-- my make purchase button -->
                             <!-- added modal -->
                             <!-- Open the modal using ID.showModal() method -->
                             <button id="purchase-btn-field"
                                 class="text-md text-white my-4 w-full bg-[#E527B2] opacity-50 cursor-not-allowed px-8 py-4 rounded"
-                                disabled onclick="my_modal_1.showModal()">open modal</button>
+                                disabled onclick="my_modal_1.showModal()">Make Purchase</button>
                             <dialog id="my_modal_1" class="modal">
                                 <form method="dialog" class="modal-box text-center">
                                     <img class="w-[30%] mx-auto" src="images/congo.png" alt="">
@@ -263,7 +284,7 @@
                                         <!-- if there is a button in form, it will close the modal -->
                                         <button onclick="gotoHome()" id="goToHome-btn-field"
                                             class="text-md text-white my-4  bg-[#E527B2] hover:bg-amber-400 mx-auto  px-8 py-4 rounded"
-                                            >Go Home</button>
+                                            > <a href="index.html">Go Home</a></button>
                                     </div>
                                 </form>
                             </dialog>
@@ -291,6 +312,7 @@
 
         </div>
 
+    </div>
     </main>
 
 
